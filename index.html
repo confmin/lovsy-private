@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy & Terms - Lovsy</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand: #FE3C72;
+            --brand-light: #FF8A80;
+            --brand-dark: #E0294F;
+            --bg: #FFF8F9;
+            --surface: #FFFFFF;
+            --text-primary: #1A1A1A;
+            --text-secondary: #555555;
+            --text-muted: #888888;
+            --stroke: #F2D9E0;
+            --radius: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--surface);
+            padding: 40px;
+            border-radius: var(--radius);
+            border: 1px solid var(--stroke);
+            box-shadow: 0 10px 30px rgba(117, 32, 58, 0.05);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--bg);
+            padding-bottom: 30px;
+        }
+
+        .logo {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--brand);
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        button {
+            font-family: inherit;
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid var(--stroke);
+            background: var(--surface);
+            color: var(--text-secondary);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        button.active {
+            background: var(--brand);
+            color: white;
+            border-color: var(--brand);
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: var(--brand-dark);
+            border-left: 4px solid var(--brand);
+            padding-left: 12px;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        p, li {
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .footer-note {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--stroke);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .alert-box {
+            background-color: #FFF0F3;
+            border-left: 4px solid var(--brand);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .alert-box p {
+            margin: 0;
+            color: var(--brand-dark);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo">Lovsy</div>
+        <p class="subtitle">Privacy Policy & Terms of Service</p>
+        <div class="lang-switch">
+            <button id="btn-en" class="active" onclick="switchLang('en')">English</button>
+            <button id="btn-vi" onclick="switchLang('vi')">Tiếng Việt</button>
+        </div>
+    </header>
+
+    <!-- ENGLISH SECTION -->
+    <div id="content-en" class="content-section active">
+        <h2>1. Privacy Policy</h2>
+        <p><strong>Effective Date:</strong> May 23, 2026</p>
+        <p>At Lovsy, we value and respect your privacy. This Privacy Policy details how we collect, process, and protect your information when you use our application.</p>
+
+        <h3>Data Collection & Permissions</h3>
+        <p>To provide you with a connected experience for couples, we request and collect the following information:</p>
+        <ul>
+            <li><strong>Profile Information:</strong> Your nickname, date of birth, gender, and profile photo.</li>
+            <li><strong>Anniversaries & Events:</strong> Dates and titles of anniversary milestones that you create to count love days.</li>
+            <li><strong>Photos (Camera and Library Access):</strong> Moments/photos you capture and choose to upload to share with your partner.</li>
+            <li><strong>Location Data (Foreground Access Only):</strong> Location information is used in the foreground while you use the app to tag your memory moments and render your love timeline on the memory map. Lovsy does NOT run background location tracking or continuously monitor your location under the background. We do not sell or share location data.</li>
+            <li><strong>Bluetooth (BLE) and Sensors:</strong> Hardware details used to confirm physical meetings when you are close to your partner ("Tap to meet").</li>
+            <li><strong>In-App Purchases:</strong> We use RevenueCat to process premium subscription statuses. Financial details are processed securely by Apple App Store and Google Play Store.</li>
+        </ul>
+
+        <h3>Age Restrictions (COPPA)</h3>
+        <p>Lovsy is restricted to users who are at least 13 years of age. We do not knowingly collect or solicit personal information from children under 13. If we learn that we have collected personal data from a child under 13, we will delete that information immediately.</p>
+
+        <h3>Data Protection & Safety</h3>
+        <p>All data transferred between your device and our servers is secured using SSL/TLS encryption. Personal memories, locations, and messages are stored securely and only accessible by you and your matched partner.</p>
+
+        <h3>Account Deletion & Data Retention</h3>
+        <div class="alert-box">
+            <p><strong>Explicit Account Deletion:</strong> You can delete your account at any time in the app (Settings -> Edit Profile -> Delete Account). Upon request, your account is immediately deactivated. All personal data, moments, location records, and match status will be permanently deleted from our servers after 30 days.</p>
+        </div>
+
+        <h2>2. Terms of Service (EULA)</h2>
+        <p>By downloading or using Lovsy, you agree to these Terms of Service. If you do not agree, do not use the app.</p>
+
+        <h3>Subscriptions & Billing</h3>
+        <p>Lovsy offers auto-renewing subscriptions for advanced storage and features. Subscriptions are billed through your Google Play or Apple App Store account. You can manage or cancel auto-renewal at any time in your App Store / Play Store account settings. Cancellations must be made at least 24 hours before the end of the current billing cycle to avoid being charged for the next period. For iOS users, your purchase and usage of premium subscriptions are also subject to Apple's Standard End User License Agreement (EULA) (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/).</p>
+
+        <h3>User Conduct</h3>
+        <p>You agree not to upload any objectionable material, adult content, or harassment material. We reserve the right to ban accounts violating content standards.</p>
+
+        <h3>Contact Us</h3>
+        <p>If you have any questions regarding your privacy or these terms, please contact us at support@lovsy.top.</p>
+    </div>
+
+    <!-- VIETNAMESE SECTION -->
+    <div id="content-vi" class="content-section">
+        <h2>1. Chính sách bảo mật</h2>
+        <p><strong>Ngày hiệu lực:</strong> 23 tháng 5, 2026</p>
+        <p>Tại Lovsy, chúng tôi trân trọng và tôn trọng quyền riêng tư của bạn. Chính sách bảo mật này mô tả chi tiết cách chúng tôi thu thập, xử lý và bảo vệ thông tin khi bạn sử dụng ứng dụng.</p>
+
+        <h3>Thu thập dữ liệu & Quyền truy cập</h3>
+        <p>Để cung cấp trải nghiệm kết nối tốt nhất cho các cặp đôi, chúng tôi thu thập các dữ liệu sau:</p>
+        <ul>
+            <li><strong>Thông tin hồ sơ:</strong> Biệt danh, ngày sinh, giới tính và ảnh đại diện của bạn.</li>
+            <li><strong>Sự kiện & Kỷ niệm:</strong> Các mốc ngày kỷ niệm mà bạn thiết lập để đếm ngày yêu.</li>
+            <li><strong>Hình ảnh (Quyền truy cập Máy ảnh & Thư viện):</strong> Các bức ảnh khoảnh khắc bạn chụp và tải lên để chia sẻ với người thương.</li>
+            <li><strong>Định vị (Chỉ truy cập Vị trí ở nền trước):</strong> Được sử dụng ở tiền cảnh (foreground) khi bạn mở và sử dụng ứng dụng để gắn thẻ địa lý cho kỷ niệm và vẽ biểu đồ hành trình của hai bạn trên bản đồ. Lovsy KHÔNG theo dõi vị trí của bạn dưới nền liên tục. Chúng tôi không bao giờ chia sẻ hay bán thông tin định vị này.</li>
+            <li><strong>Bluetooth (BLE) & Cảm biến:</strong> Được dùng để xác nhận chạm máy khi gặp nhau ngoài đời thực ("Gặp nhau hôm nay").</li>
+            <li><strong>Giao dịch mua gói:</strong> Chúng tôi sử dụng RevenueCat để quản lý trạng thái gói Premium. Toàn bộ thông tin thanh toán được xử lý an toàn bởi Apple App Store và Google Play Store.</li>
+        </ul>
+
+        <h3>Giới hạn độ tuổi (COPPA)</h3>
+        <p>Lovsy chỉ dành cho người dùng từ 13 tuổi trở lên. Chúng tôi không chủ động thu thập hoặc lưu trữ thông tin cá nhân của trẻ em dưới 13 tuổi. Nếu phát hiện tài khoản vi phạm giới hạn độ tuổi, chúng tôi sẽ tiến hành xóa tài khoản ngay lập tức.</p>
+
+        <h3>Bảo mật dữ liệu</h3>
+        <p>Mọi dữ liệu truyền tải giữa thiết bị của bạn và máy chủ đều được mã hóa SSL/TLS an toàn. Hình ảnh kỷ niệm, nhật ký cảm xúc và thông tin định vị chỉ hiển thị duy nhất đối với bạn và người yêu được ghép đôi cùng bạn.</p>
+
+        <h3>Xóa tài khoản & Lưu trữ</h3>
+        <div class="alert-box">
+            <p><strong>Quyền xóa tài khoản:</strong> Bạn có quyền xóa tài khoản bất kỳ lúc nào trong cài đặt ứng dụng (Cài đặt -> Chỉnh sửa hồ sơ -> Xóa tài khoản). Tài khoản sẽ bị vô hiệu hóa ngay lập tức và toàn bộ ảnh kỷ niệm, định vị, thông tin hồ sơ của hai bạn sẽ bị xóa vĩnh viễn khỏi máy chủ sau 30 ngày.</p>
+        </div>
+
+        <h2>2. Điều khoản dịch vụ</h2>
+        <p>Bằng việc tải xuống và sử dụng Lovsy, bạn đồng ý với các điều khoản dịch vụ này. Nếu bạn không đồng ý, vui lòng ngừng sử dụng ứng dụng.</p>
+
+        <h3>Đăng ký & Thanh toán</h3>
+        <p>Lovsy cung cấp các gói đăng ký tự động gia hạn để mở khóa dung lượng và tính năng Premium. Các giao dịch được xử lý thông qua tài khoản Google Play hoặc Apple App Store. Bạn có thể hủy gia hạn bất kỳ lúc nào trong Cài đặt tài khoản của App Store hoặc Play Store tối thiểu 24 giờ trước khi chu kỳ thanh toán kết thúc. Đối với người dùng iOS, gói Premium và việc sử dụng cũng được điều chỉnh bởi Thỏa thuận cấp phép người dùng cuối tiêu chuẩn của Apple (EULA) (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/).</p>
+
+        <h3>Tiêu chuẩn nội dung</h3>
+        <p>Bạn đồng ý không đăng tải các nội dung khiêu dâm, quấy rối, xúc phạm hoặc vi phạm pháp luật. Chúng tôi có quyền khóa tài khoản vĩnh viễn nếu phát hiện vi phạm.</p>
+
+        <h3>Liên hệ</h3>
+        <p>Mọi câu hỏi liên quan đến chính sách và điều khoản, vui lòng liên hệ email: support@lovsy.top.</p>
+    </div>
+
+    <div class="footer-note">
+        <p>&copy; 2026 Lovsy. All rights reserved.</p>
+    </div>
+</div>
+
+<script>
+    function switchLang(lang) {
+        document.querySelectorAll('.content-section').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('button').forEach(el => el.classList.remove('active'));
+        
+        if (lang === 'en') {
+            document.getElementById('content-en').classList.add('active');
+            document.getElementById('btn-en').classList.add('active');
+        } else {
+            document.getElementById('content-vi').classList.add('active');
+            document.getElementById('btn-vi').classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>
